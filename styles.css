@@ -21,7 +21,8 @@ img,svg{max-width:100%;height:auto}
 /* ===== Navbar & footer dùng chung ===== */
 .site-nav{background:var(--muc-chu)}
 .site-nav .navbar-brand{font-weight:700;color:#fff;display:flex;gap:.5rem;align-items:center}
-.site-nav .brand-mark{font-family:var(--font-code);background:var(--muc-vang);color:var(--muc-chu);padding:.05rem .45rem;border-radius:.3rem;font-weight:700}
+.site-nav .brand-logo{height:44px;width:auto;border-radius:.25rem}
+.site-nav .brand-team{font-size:.95rem;letter-spacing:.04em}
 .site-nav .nav-link{color:#CFE0EE;border-bottom:2px solid transparent}
 .site-nav .nav-link:hover{color:#fff}
 .site-nav .nav-link.active{color:#fff;border-bottom-color:var(--muc-vang)}
@@ -103,6 +104,37 @@ textarea#code-input{font-family:var(--font-code);font-size:.95rem}
 .nav-tabs{flex-wrap:nowrap;overflow-x:auto}
 .nav-tabs .nav-link{white-space:nowrap}
 .tb-rong{grid-column:1/-1}
+
+/* ===== CSS bổ sung cho modal xem nội dung chi tiết theo yêu cầu ===== */
+.chi-tiet-noi-dung-an {
+  display: none; /* Ẩn các gạch đầu dòng và nội dung dài ở thẻ card ngoài */
+}
+
+.modal-kien-thuc-content {
+  background-color: #1a222d !important; /* Background đen xám */
+  color: #e2e8f0 !important;
+  font-family: var(--font-chinh) !important; /* Dùng font chữ bình thường (Be Vietnam Pro), không phải font mã code */
+  border-radius: var(--bk);
+  border: 1px solid #2a3f5a;
+}
+
+.modal-kien-thuc-content .modal-header {
+  border-bottom: 1px solid #2a3f5a;
+}
+
+.modal-kien-thuc-content .modal-footer {
+  border-top: 1px solid #2a3f5a;
+}
+
+.modal-kien-thuc-content ul {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.modal-kien-thuc-content li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
 
 @media (max-width:575.98px){
   .bang-cong-cu{padding:1rem}
