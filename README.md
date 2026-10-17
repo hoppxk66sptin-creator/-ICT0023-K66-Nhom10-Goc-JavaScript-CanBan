@@ -1,1 +1,0 @@
-# -ICT0023-K66-NhomXX-Goc-JavaScrip-CanBan
