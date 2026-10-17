@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hỏi đáp | JS Căn Bản</title>
+<meta name="description" content="Hướng dẫn dùng công cụ và câu hỏi thường gặp về JavaScript căn bản.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#noi-dung-chinh">Bỏ qua điều hướng</a>
+<header>
+  <nav class="navbar navbar-expand-md site-nav" aria-label="Điều hướng chính">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-mark">JS</span> Căn Bản</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-chinh" aria-controls="menu-chinh" aria-expanded="false" aria-label="Mở menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu-chinh">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li><li class="nav-item"><a class="nav-link" href="kien-thuc.html">Kiến thức</a></li><li class="nav-item"><a class="nav-link" href="cong-cu.html">Công cụ</a></li><li class="nav-item"><a class="nav-link active" href="hoi-dap.html" aria-current="page">Hỏi đáp</a></li><li class="nav-item"><a class="nav-link" href="lien-he.html">Liên hệ</a></li></ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="noi-dung-chinh">
+
+<div class="tieu-de-trang"><div class="container">
+  <h1>Hướng dẫn và hỏi đáp</h1>
+  <p>Cách dùng từng công cụ và những câu hỏi sinh viên hay gặp.</p>
+</div></div>
+
+<section class="khoi-tight" aria-labelledby="tieu-de-huong-dan">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <h2 id="tieu-de-huong-dan">Hướng dẫn dùng công cụ</h2>
+        <ol class="lo-trinh">
+          <li><strong>Trắc nghiệm:</strong> chọn đủ đáp án rồi bấm "Chấm điểm". Thiếu câu nào, trang sẽ báo rõ số câu đó.</li>
+          <li><strong>Luyện gõ mã:</strong> gõ lệnh theo đề rồi bấm "Kiểm tra". Nếu sai, bạn nhận gợi ý cụ thể.</li>
+          <li><strong>Tra thuật ngữ:</strong> gõ từ khóa, kết quả lọc ngay. Bấm X để xóa tìm kiếm.</li>
+          <li><strong>Bàn phím:</strong> dùng Tab để di chuyển, phím mũi tên để chọn đáp án, Enter hoặc Space để bấm nút.</li>
+        </ol>
+        <div class="alert alert-warning" role="alert">Điểm số và lộ trình học chỉ mang tính tham khảo.</div>
+      </div>
+      <div class="col-lg-7">
+        <h2>Câu hỏi thường gặp</h2>
+        <div class="accordion" id="faq-accordion">
+<div class="accordion-item">
+  <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">Mình nên dùng var, let hay const?</button></h3>
+  <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion"><div class="accordion-body">Hãy dùng <code>const</code> làm mặc định. Chỉ chuyển sang <code>let</code> khi giá trị cần thay đổi. Tránh <code>var</code> vì phạm vi hàm và hoisting dễ gây lỗi khó thấy.</div></div>
+</div>
+<div class="accordion-item">
+  <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Vì sao const mà vẫn sửa được phần tử trong mảng?</button></h3>
+  <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body"><code>const</code> chỉ khóa việc gán lại tên biến. Nếu giá trị là mảng hoặc đối tượng, bạn vẫn thêm, sửa, xóa phần tử bên trong. Gán lại cả biến mới báo lỗi.</div></div>
+</div>
+<div class="accordion-item">
+  <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Vì sao typeof null lại ra "object"?</button></h3>
+  <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body">Đó là lỗi lịch sử của ngôn ngữ và được giữ lại để không làm hỏng các trang web cũ. Để kiểm tra null, hãy so sánh trực tiếp: <code>x === null</code>.</div></div>
+</div>
+<div class="accordion-item">
+  <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">Làm sao kiểm tra một giá trị có phải NaN?</button></h3>
+  <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body"><code>NaN</code> không bằng chính nó nên <code>x === NaN</code> luôn sai. Hãy dùng <code>Number.isNaN(x)</code>.</div></div>
+</div>
+<div class="accordion-item">
+  <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">map và filter khác nhau thế nào?</button></h3>
+  <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body"><code>map</code> biến đổi từng phần tử và trả mảng mới cùng độ dài. <code>filter</code> chỉ giữ phần tử thỏa điều kiện nên mảng mới có thể ngắn hơn. Cả hai không sửa mảng gốc.</div></div>
+</div>
+<div class="accordion-item">
+  <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">textContent và innerHTML nên dùng cái nào?</button></h3>
+  <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body">Mặc định dùng <code>textContent</code> vì an toàn trước XSS. Chỉ dùng <code>innerHTML</code> khi bạn kiểm soát hoàn toàn đoạn HTML được chèn.</div></div>
+</div>
+<div class="accordion-item">
+  <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">Tại sao tải lại trang thì bài làm bị mất?</button></h3>
+  <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body">Website được thiết kế không lưu dữ liệu (không localStorage, cookie hay máy chủ). Dữ liệu chỉ tồn tại trong phiên đang mở và đặt lại khi tải lại trang.</div></div>
+</div>
+        </div>
+        <p class="mt-3">Chưa thấy câu trả lời? <a href="lien-he.html">Gửi câu hỏi cho nhóm</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p class="mb-2"><strong>JS Căn Bản</strong> - trang ôn tập JavaScript cho sinh viên năm nhất.</p>
+    <small>Đây là sản phẩm học tập, không có backend, không đăng nhập, không lưu dữ liệu. Mọi dữ liệu là dữ liệu mẫu và sẽ đặt lại khi tải lại trang. Nguồn tài nguyên xem trong <code>SOURCES.md</code>.</small>
+    <small class="mt-2">&copy; <span id="nam-hien-tai">2026</span> Nhóm 10 thực hiện. Điểm số và lộ trình trên trang chỉ mang tính tham khảo.</small>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
