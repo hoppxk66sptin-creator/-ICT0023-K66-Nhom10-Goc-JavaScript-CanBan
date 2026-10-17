@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liên hệ | JS Căn Bản</title>
+<meta name="description" content="Gửi phản hồi mẫu và xem lộ trình học dự kiến.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#noi-dung-chinh">Bỏ qua điều hướng</a>
+<header>
+  <nav class="navbar navbar-expand-md site-nav" aria-label="Điều hướng chính">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-mark">JS</span> Căn Bản</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-chinh" aria-controls="menu-chinh" aria-expanded="false" aria-label="Mở menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu-chinh">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li><li class="nav-item"><a class="nav-link" href="kien-thuc.html">Kiến thức</a></li><li class="nav-item"><a class="nav-link" href="cong-cu.html">Công cụ</a></li><li class="nav-item"><a class="nav-link" href="hoi-dap.html">Hỏi đáp</a></li><li class="nav-item"><a class="nav-link active" href="lien-he.html" aria-current="page">Liên hệ</a></li></ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="noi-dung-chinh">
+
+<div class="tieu-de-trang"><div class="container">
+  <h1>Liên hệ và phản hồi</h1>
+  <p>Cho nhóm biết bạn thấy trang thế nào, và xem lộ trình học dự kiến của bạn.</p>
+</div></div>
+
+<section class="khoi-tight">
+  <div class="container">
+    <div class="alert alert-warning" role="alert"><strong>Chỉ là mẫu:</strong> biểu mẫu không gửi dữ liệu đi đâu. Hãy dùng biệt danh và email mẫu, không nhập thông tin cá nhân thật.</div>
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <h2>Biểu mẫu phản hồi</h2>
+        <form id="form-phan-hoi" novalidate>
+          <div class="mb-3">
+            <label class="form-label" for="hoTen">Tên gọi (biệt danh)</label>
+            <input class="form-control" type="text" id="hoTen" name="hoTen" autocomplete="off" aria-describedby="loi-hoTen">
+            <div class="invalid-feedback" id="loi-hoTen"></div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="email">Email (mẫu)</label>
+            <input class="form-control" type="email" id="email" name="email" autocomplete="off" placeholder="ten@example.com" aria-describedby="loi-email">
+            <div class="invalid-feedback" id="loi-email"></div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="nhom">Bạn là</label>
+            <select class="form-select" id="nhom" name="nhom" aria-describedby="loi-nhom">
+              <option value="">-- Chọn --</option>
+              <option value="sinh-vien">Sinh viên</option>
+              <option value="hoc-sinh">Học sinh</option>
+              <option value="giao-vien">Giáo viên</option>
+              <option value="cau-lac-bo">Thành viên câu lạc bộ</option>
+            </select>
+            <div class="invalid-feedback" id="loi-nhom"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <label class="form-label" for="gioHoc">Số giờ học mỗi tuần</label>
+              <input class="form-control" type="number" id="gioHoc" name="gioHoc" inputmode="numeric" min="1" max="40" aria-describedby="loi-gioHoc">
+              <div class="invalid-feedback" id="loi-gioHoc"></div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <label class="form-label" for="daHoc">Số chủ đề đã học (0 đến 7)</label>
+              <input class="form-control" type="number" id="daHoc" name="daHoc" inputmode="numeric" min="0" max="7" aria-describedby="loi-daHoc">
+              <div class="invalid-feedback" id="loi-daHoc"></div>
+            </div>
+          </div>
+          <fieldset class="mb-3">
+            <legend class="form-label fs-6 fw-semibold">Mức hài lòng (1 thấp, 5 cao)</legend>
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-check"><input class="form-check-input" type="radio" name="danhGia" id="dg1" value="1"><label class="form-check-label" for="dg1">1</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="danhGia" id="dg2" value="2"><label class="form-check-label" for="dg2">2</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="danhGia" id="dg3" value="3"><label class="form-check-label" for="dg3">3</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="danhGia" id="dg4" value="4"><label class="form-check-label" for="dg4">4</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="danhGia" id="dg5" value="5"><label class="form-check-label" for="dg5">5</label></div>
+            </div>
+            <div class="invalid-feedback" id="loi-danhGia"></div>
+          </fieldset>
+          <div class="mb-3">
+            <label class="form-label" for="noiDung">Góp ý của bạn</label>
+            <textarea class="form-control" id="noiDung" name="noiDung" rows="4" aria-describedby="dem-ky-tu loi-noiDung"></textarea>
+            <div class="form-text" id="dem-ky-tu">0/500 ký tự</div>
+            <div class="invalid-feedback" id="loi-noiDung"></div>
+          </div>
+          <div id="form-thong-bao" aria-live="polite"></div>
+          <div class="d-flex flex-wrap gap-2">
+            <button type="submit" class="btn btn-xanh">Gửi phản hồi</button>
+            <button type="reset" class="btn btn-outline-secondary">Đặt lại</button>
+            <button type="button" class="btn btn-outline-dark" id="nut-form-thu">Dùng thử dữ liệu mẫu</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-5">
+        <h2>Lộ trình học dự kiến</h2>
+        <p>Nhập số giờ học mỗi tuần và số chủ đề đã học, kết quả tính ngay bên dưới (giả định mỗi chủ đề mất khoảng 2 giờ).</p>
+        <div class="ket-qua-tuc-thoi" id="ket-qua-lo-trinh" aria-live="polite"></div>
+        <h2 class="mt-4 fs-4">Thông tin liên hệ nhóm</h2>
+        <ul>
+          <li>Email nhóm (mẫu): <code>nhom.js@example.com</code></li>
+          <li>Giờ phản hồi: thứ Hai đến thứ Sáu</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p class="mb-2"><strong>JS Căn Bản</strong> - trang ôn tập JavaScript cho sinh viên năm nhất.</p>
+    <small>Đây là sản phẩm học tập, không có backend, không đăng nhập, không lưu dữ liệu. Mọi dữ liệu là dữ liệu mẫu và sẽ đặt lại khi tải lại trang. Nguồn tài nguyên xem trong <code>SOURCES.md</code>.</small>
+    <small class="mt-2">&copy; <span id="nam-hien-tai">2026</span> Nhóm 10 thực hiện. Điểm số và lộ trình trên trang chỉ mang tính tham khảo.</small>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/lien-he.js"></script>
+</body>
+</html>
