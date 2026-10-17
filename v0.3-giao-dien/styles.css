@@ -1,0 +1,146 @@
+/* ===== Design tokens ===== */
+:root{
+  --muc-nen:#F4F7FA; --muc-chu:#14233A; --muc-xanh:#0E7C86; --muc-xanh-dam:#0A5961;
+  --muc-vang:#FFC93C; --muc-vien:#D5DEE8; --muc-phu:#5B6B80; --muc-the:#FFFFFF;
+  --bk:.6rem; --kc:clamp(2.5rem,6vw,4.5rem);
+  --font-chinh:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --font-code:"JetBrains Mono",ui-monospace,Consolas,Menlo,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-chinh);background:var(--muc-nen);color:var(--muc-chu);line-height:1.65;overflow-x:hidden}
+h1,h2,h3,h4{font-weight:700;line-height:1.25;letter-spacing:-.01em}
+h1{font-size:clamp(1.9rem,5vw,3rem)} h2{font-size:clamp(1.4rem,3.2vw,2rem)} h3{font-size:1.2rem}
+p,li{max-width:70ch}
+a{color:var(--muc-xanh-dam)} a:hover{color:var(--muc-chu)}
+img,svg{max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--muc-vang);outline-offset:2px;border-radius:4px}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--muc-vang);color:var(--muc-chu);padding:.5rem 1rem;z-index:2000}
+.skip-link:focus{left:0}
+
+/* ===== Navbar & footer dùng chung ===== */
+.site-nav{background:var(--muc-chu)}
+.site-nav .navbar-brand{font-weight:700;color:#fff;display:flex;gap:.5rem;align-items:center}
+.site-nav .brand-logo{height:44px;width:auto;border-radius:.25rem}
+.site-nav .brand-team{font-size:.95rem;letter-spacing:.04em}
+.site-nav .nav-link{color:#CFE0EE;border-bottom:2px solid transparent}
+.site-nav .nav-link:hover{color:#fff}
+.site-nav .nav-link.active{color:#fff;border-bottom-color:var(--muc-vang)}
+.site-nav .navbar-toggler{border-color:#7f93aa}
+.site-nav .navbar-toggler-icon{filter:invert(1)}
+.site-footer{background:var(--muc-chu);color:#C4D3E2;padding:2rem 0;margin-top:var(--kc)}
+.site-footer a{color:#fff}
+.site-footer small{display:block;max-width:70ch}
+
+/* ===== Bố cục chung ===== */
+.khoi{padding-block:var(--kc)}
+.khoi-tight{padding-block:calc(var(--kc)/2)}
+.tieu-de-trang{background:var(--muc-chu);color:#fff;padding-block:2.5rem}
+.tieu-de-trang p{color:#C4D3E2;margin-bottom:0}
+.hero{background:var(--muc-chu);color:#fff;padding-block:var(--kc)}
+.hero p.lead{color:#C4D3E2}
+.btn-chinh{background:var(--muc-vang);color:var(--muc-chu);border:0;font-weight:600}
+.btn-chinh:hover{background:#ffd966;color:var(--muc-chu)}
+.btn-xanh{background:var(--muc-xanh);color:#fff;border:0;font-weight:600}
+.btn-xanh:hover{background:var(--muc-xanh-dam);color:#fff}
+.btn{min-height:44px}
+
+/* Cửa sổ mã ở trang chủ: điểm nhấn duy nhất của giao diện */
+.cua-so-code{background:#0B1727;border:1px solid #2A3F5A;border-radius:var(--bk);overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.cua-so-code .thanh{display:flex;gap:.4rem;padding:.6rem .9rem;background:#12263E}
+.cua-so-code .thanh span{width:.7rem;height:.7rem;border-radius:50%;background:#3C5575}
+.cua-so-code pre{margin:0;padding:1rem 1.1rem;color:#DCE8F5;font-family:var(--font-code);font-size:.92rem;overflow-x:auto}
+.tk-kw{color:#FFC93C}.tk-str{color:#7FDCC6}.tk-cm{color:#7C93AD}
+
+/* ===== Thẻ, bảng, code ===== */
+.the{background:var(--muc-the);border:1px solid var(--muc-vien);border-radius:var(--bk);height:100%}
+.the .card-body{padding:1.25rem}
+.the-nhan{display:inline-block;font-size:.8rem;font-weight:600;padding:.1rem .6rem;border-radius:99px;background:#DDF1F2;color:var(--muc-xanh-dam)}
+pre.code-block{background:#0B1727;color:#DCE8F5;font-family:var(--font-code);font-size:.88rem;padding:1rem;border-radius:var(--bk);overflow-x:auto;white-space:pre}
+code{font-family:var(--font-code);font-size:.9em;color:var(--muc-xanh-dam);word-break:break-word}
+pre code{color:inherit;word-break:normal}
+.table{--bs-table-bg:var(--muc-the)}
+.table thead th{background:var(--muc-chu);color:#fff;font-weight:600;white-space:nowrap}
+.lo-trinh{counter-reset:buoc;list-style:none;padding:0}
+.lo-trinh li{counter-increment:buoc;position:relative;padding:.6rem 0 .6rem 3rem;border-bottom:1px dashed var(--muc-vien)}
+.lo-trinh li::before{content:counter(buoc);position:absolute;left:0;top:.5rem;width:2rem;height:2rem;border-radius:50%;background:var(--muc-chu);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.9rem}
+
+/* ===== Công cụ ===== */
+.nav-tabs .nav-link{color:var(--muc-phu);font-weight:600}
+.nav-tabs .nav-link.active{color:var(--muc-chu);border-bottom-color:var(--muc-the);background:var(--muc-the);border-top:3px solid var(--muc-xanh)}
+.bang-cong-cu{background:var(--muc-the);border:1px solid var(--muc-vien);border-top:0;padding:1.5rem;border-radius:0 0 var(--bk) var(--bk)}
+.quiz-cau{border:1px solid var(--muc-vien);border-radius:var(--bk);padding:1rem 1.1rem;margin-bottom:1rem}
+.quiz-cau legend{font-size:1.05rem;font-weight:600;float:none;width:auto;padding:0 .4rem;margin-bottom:.4rem}
+.quiz-cau.thieu{border-color:#DC3545;background:#FFF5F5}
+.quiz-cau.dung{border-color:#198754;background:#F0FAF4}
+.quiz-cau.sai{border-color:#DC3545;background:#FFF5F5}
+.quiz-cau .giai-thich{margin:.5rem 0 0;font-size:.92rem;color:var(--muc-phu)}
+textarea#code-input{font-family:var(--font-code);font-size:.95rem}
+.the-thuat-ngu{background:var(--muc-the);border:1px solid var(--muc-vien);border-left:5px solid var(--muc-xanh);border-radius:var(--bk);padding:1rem 1.2rem;height:100%}
+.the-thuat-ngu h3{margin-bottom:.3rem}
+.tb-rong{text-align:center;padding:2rem 1rem;border:2px dashed var(--muc-vien);border-radius:var(--bk);color:var(--muc-phu)}
+.dem-ket-qua{color:var(--muc-phu);font-size:.92rem}
+
+/* ===== Form & phản hồi ===== */
+.form-label{font-weight:600}
+.form-text,.ghi-chu{color:var(--muc-phu);font-size:.9rem}
+.ket-qua-tuc-thoi{background:#FFF8DB;border-left:5px solid var(--muc-vang);padding:1rem 1.2rem;border-radius:var(--bk)}
+.accordion-button:not(.collapsed){background:#DDF1F2;color:var(--muc-chu)}
+.accordion-button:focus{box-shadow:0 0 0 .2rem rgba(255,201,60,.6)}
+.hero{position:relative;isolation:isolate;overflow:hidden}
+.hero::after{content:"";position:absolute;z-index:-1;width:min(42vw,34rem);aspect-ratio:1;right:-9rem;top:-12rem;border:1px solid rgba(255,255,255,.12);border-radius:50%;box-shadow:0 0 0 2rem rgba(255,255,255,.025),0 0 0 5rem rgba(255,255,255,.02)}
+.site-nav{position:relative;z-index:10}
+.the{box-shadow:0 .5rem 1.5rem rgba(20,35,58,.06);transition:transform .18s ease,box-shadow .18s ease}
+.the:hover{transform:translateY(-3px);box-shadow:0 .9rem 2rem rgba(20,35,58,.1)}
+.the .btn{margin-top:.35rem}
+.the .card-title{font-size:1.15rem}
+.tieu-de-trang{background-image:linear-gradient(115deg,var(--muc-chu),#183754)}
+.table{vertical-align:middle}
+.form-control,.form-select{min-height:44px}
+.quiz-cau .form-check{padding:.45rem .5rem .45rem 1.9rem;border-radius:.4rem}
+.quiz-cau .form-check:hover{background:rgba(14,124,134,.07)}
+.site-footer code{color:#D8F0EF}
+.site-footer small+small{margin-top:.55rem}
+.nav-tabs{flex-wrap:nowrap;overflow-x:auto}
+.nav-tabs .nav-link{white-space:nowrap}
+.tb-rong{grid-column:1/-1}
+
+/* ===== CSS bổ sung cho modal xem nội dung chi tiết theo yêu cầu ===== */
+.chi-tiet-noi-dung-an {
+  display: none; /* Ẩn các gạch đầu dòng và nội dung dài ở thẻ card ngoài */
+}
+
+.modal-kien-thuc-content {
+  background-color: #1a222d !important; /* Background đen xám */
+  color: #e2e8f0 !important;
+  font-family: var(--font-chinh) !important; /* Dùng font chữ bình thường (Be Vietnam Pro), không phải font mã code */
+  border-radius: var(--bk);
+  border: 1px solid #2a3f5a;
+}
+
+.modal-kien-thuc-content .modal-header {
+  border-bottom: 1px solid #2a3f5a;
+}
+
+.modal-kien-thuc-content .modal-footer {
+  border-top: 1px solid #2a3f5a;
+}
+
+.modal-kien-thuc-content ul {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.modal-kien-thuc-content li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width:575.98px){
+  .bang-cong-cu{padding:1rem}
+  .nav-tabs{flex-wrap:wrap;overflow:visible}
+  .nav-tabs .nav-item{flex:1 0 auto}
+  .nav-tabs .nav-link{width:100%;padding:.5rem .6rem;font-size:.9rem;white-space:normal}
+  .hero::after{right:-14rem;top:-9rem;width:22rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
