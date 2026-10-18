@@ -49,8 +49,10 @@ https://github.com/hoppxk66sptin-creator/-ICT0023-K66-Nhom10-Goc-JavaScript-CanB
   * Xây dựng bài thuyết trình khoảng 8–10 slide.
   * Lập kịch bản video dài khoảng 6–8 phút.
   * Phối hợp với các thành viên ghi hình phần giới thiệu website, demo GitHub Pages, mã nguồn, lịch sử phiên bản và kết quả kiểm thử.
-  * Biên tập video mạch lạc, sinh động, thể hiện quá trình làm việc và sự phối hợp của nhóm. Nhiệm vụ cụ thể trong dự án này 
+  * Biên tập video mạch lạc, sinh động, thể hiện quá trình làm việc và sự phối hợp của nhóm. Nhiệm vụ cụ thể trong dự án này là tạo ra các file như: kien-thuc.html , kiến-thuc.js
 * **Minh chứng:** [Liên kết file PPTX và video YouTube Unlisted và các liên kết brank cụ thể ], cụ thể là đường link liên kết branch:
+https://github.com/hoppxk66sptin-creator/-ICT0023-K66-Nhom10-Goc-JavaScript-CanBan/tree/member/Vu-Ha-Giang-Minh , đường link youtube:
+https://youtu.be/WNyx6Tj_H0E
 
 ## 3. Quy trình phối hợp
 
