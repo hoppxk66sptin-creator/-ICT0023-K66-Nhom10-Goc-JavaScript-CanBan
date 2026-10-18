@@ -15,29 +15,31 @@
 * **Tài khoản GitHub:** hoppxk66sptin-creator
 * **Vai trò:** Phát triển mã nguồn và kiểm thử.
 * **Nhiệm vụ:** Thực hiện các chức năng được nhóm phân công; phối hợp tích hợp mã nguồn; kiểm tra hoạt động của chức năng và sửa lỗi phát hiện trong quá trình kiểm thử.
-* * Tổng hợp minh chứng về mục tiêu, cấu trúc website, wireframe, giao diện, chức năng, quy trình Git, kiểm thử, nguồn tham khảo, hạn chế và hướng phát triển.
-* **Minh chứng:** [Liên kết Issue, branch, Pull Request hoặc commit liên quan].
+* * Tổng hợp minh chứng về mục tiêu, cấu trúc website, wireframe, giao diện, chức năng, quy trình Git, kiểm thử, nguồn tham khảo, hạn chế và hướng phát triển.Nhiệm vụ cụ thể hơn trong dự án này là tạo ra các file như sau :hoi-dap.html, main.js , style.css, cong-cu.html, cong-cu.js
+* **Minh chứng:** [Liên kết Issue, branch, Pull Request hoặc commit liên quan] , cụ thể là đường link liên kết branch:
+https://github.com/hoppxk66sptin-creator/-ICT0023-K66-Nhom10-Goc-JavaScript-CanBan/tree/team-leader/Phan-Xuan-Hop
 
 ### 2.2.Chang A Vương
 
 * **Tài khoản GitHub:** vuongcak66sptin-bit
 * **Vai trò:** Phát triển mã nguồn và kiểm thử.
-* **Nhiệm vụ:** Thực hiện các phần mã nguồn được phân công; phối hợp hoàn thiện website; kiểm thử giao diện, chức năng và các trường hợp dữ liệu đầu vào.
-* **Minh chứng:** [Liên kết Issue, branch, Pull Request hoặc commit liên quan].
+* **Nhiệm vụ:** Thực hiện các phần mã nguồn được phân công; phối hợp hoàn thiện website; kiểm thử giao diện, chức năng và các trường hợp dữ liệu đầu vào.Nhiệm vụ cụ thể trong dự án này là tạo ra các file như :lien-he.html , lien-he.js
+* **Minh chứng:** [Liên kết Issue, branch, Pull Request hoặc commit liên quan] , cụ thể là đường link liên kết branch:
+https://github.com/hoppxk66sptin-creator/-ICT0023-K66-Nhom10-Goc-JavaScript-CanBan/tree/Member/Chang-A-Vuong
 
 ### 2.3. Toán Thị Thu Hương
 
 * **Tài khoản GitHub:** huongtttk66sptin-beep
 * **Vai trò:** Phụ trách tài liệu dự án và tổng hợp báo cáo.
 * **Nhiệm vụ:**
-
+ 
   * Soạn thảo và cập nhật `README.md`.
   * Soạn thảo `SOURCES.md`, ghi nhận tài liệu, mã tham khảo, tài nguyên và công cụ AI đã sử dụng.
   * Soạn thảo `CONTRIBUTIONS.md`, tổng hợp đóng góp thực tế của thành viên.
   * Biên soạn báo cáo DOCX và PDF theo yêu cầu.
-  * Phối hợp với các thành viên để xác minh nội dung báo cáo đúng với sản phẩm thực tế.
-* **Minh chứng:** [Liên kết các commit tài liệu và các file báo cáo].
-
+  * Phối hợp với các thành viên để xác minh nội dung báo cáo đúng với sản phẩm thực tế. Nhiệm vụ cụ thể trong dự án này là tạo ra các file như : index.html ,data.js
+* **Minh chứng:** [Liên kết các commit tài liệu và các file báo cáo và các liên kết branch] , cụ thể là đường link liên kết branch:
+https://github.com/hoppxk66sptin-creator/-ICT0023-K66-Nhom10-Goc-JavaScript-CanBan/tree/member/Toan-Thi-Thu-Huong
 ### 2.4.Vũ Hà Giang Minh
 
 * **Tài khoản GitHub: minhvhg.k66sptin@utb.edu.vn** 
@@ -47,8 +49,8 @@
   * Xây dựng bài thuyết trình khoảng 8–10 slide.
   * Lập kịch bản video dài khoảng 6–8 phút.
   * Phối hợp với các thành viên ghi hình phần giới thiệu website, demo GitHub Pages, mã nguồn, lịch sử phiên bản và kết quả kiểm thử.
-  * Biên tập video mạch lạc, sinh động, thể hiện quá trình làm việc và sự phối hợp của nhóm.
-* **Minh chứng:** [Liên kết file PPTX và video YouTube Unlisted].
+  * Biên tập video mạch lạc, sinh động, thể hiện quá trình làm việc và sự phối hợp của nhóm. Nhiệm vụ cụ thể trong dự án này 
+* **Minh chứng:** [Liên kết file PPTX và video YouTube Unlisted và các liên kết brank cụ thể ], cụ thể là đường link liên kết branch:
 
 ## 3. Quy trình phối hợp
 
