@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -27,12 +28,14 @@
   </nav>
 </header>
 <main id="noi-dung-chinh">
+
 <div class="tieu-de-trang py-4">
   <div class="container">
     <h1>Danh sách chủ đề kiến thức</h1>
     <p>Chọn chủ đề để xem chi tiết nội dung và ví dụ minh họa.</p>
   </div>
 </div>
+
 <section class="khoi">
   <div class="container">
     <!-- Khu vực hiển thị danh sách các thẻ kiến thức được render tự động từ JS -->
@@ -41,64 +44,9 @@
     </div>
   </div>
 </section>
-</main>
-<section class="khoi-tight" aria-labelledby="tieu-de-bang">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-7">
-        <h2 id="tieu-de-bang">So sánh var, let và const</h2>
-        <div class="table-responsive">
-          <table class="table table-bordered align-middle">
-            <caption class="visually-hidden">So sánh ba từ khóa khai báo biến</caption>
-            <thead><tr><th scope="col">Đặc điểm</th><th scope="col">var</th><th scope="col">let</th><th scope="col">const</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Phạm vi</th><td>Hàm</td><td>Khối</td><td>Khối</td></tr>
-              <tr><th scope="row">Gán lại giá trị</th><td>Được</td><td>Được</td><td>Không</td></tr>
-              <tr><th scope="row">Khai báo lại cùng tên</th><td>Được</td><td>Không</td><td>Không</td></tr>
-              <tr><th scope="row">Hoisting</th><td>Có (undefined)</td><td>Có, nhưng lỗi nếu dùng sớm</td><td>Có, nhưng lỗi nếu dùng sớm</td></tr>
-              <tr><th scope="row">Nên dùng?</th><td>Không</td><td>Khi giá trị đổi</td><td>Mặc định</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <h2>Hình minh họa phạm vi</h2>
-        <img src="assets/pham-vi-bien.svg" class="img-fluid rounded border" width="560" height="300" alt="Sơ đồ hai hình chữ nhật lồng nhau: var dùng được trong cả hàm, let và const chỉ dùng được trong khối lệnh bên trong.">
-        <p class="ghi-chu mt-2">Hình tự vẽ bằng SVG cho trang này.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="khoi-tight" aria-labelledby="tieu-de-kieu">
-  <div class="container">
-    <h2 id="tieu-de-kieu">Phân biệt undefined, null và NaN</h2>
-    <div class="table-responsive">
-      <table class="table table-bordered align-middle">
-        <caption class="visually-hidden">Ba giá trị đặc biệt trong JavaScript</caption>
-        <thead><tr><th scope="col">Giá trị</th><th scope="col">Ý nghĩa</th><th scope="col">Ví dụ</th></tr></thead>
-        <tbody>
-          <tr><th scope="row"><code>undefined</code></th><td>Biến đã khai báo nhưng chưa gán giá trị.</td><td><code>let diaChi;</code></td></tr>
-          <tr><th scope="row"><code>null</code></th><td>Giá trị rỗng do lập trình viên chủ động gán.</td><td><code>let ketQua = null;</code></td></tr>
-          <tr><th scope="row"><code>NaN</code></th><td>Kết quả của phép tính số học không hợp lệ. Kiểm tra bằng <code>Number.isNaN()</code>.</td><td><code>Number("abc")</code></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-<div class="modal fade" id="modalCode" tabindex="-1" aria-labelledby="modalCodeTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title fs-5" id="modalCodeTitle">Ví dụ</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
-      </div>
-      <div class="modal-body"><pre class="code-block mb-0"><code id="modalCodeBody"></code></pre></div>
-      <div class="modal-footer"><button type="button" class="btn btn-xanh" data-bs-dismiss="modal">Đóng</button></div>
-    </div>
-  </div>
-</div>
 </main>
+
 <footer class="site-footer">
   <div class="container">
     <p class="mb-2"><strong>JS Căn Bản</strong> trang ôn tập JavaScript cho sinh viên năm nhất.</p>
@@ -106,10 +54,10 @@
     <small class="mt-2">&copy; <span id="nam-hien-tai">2026</span> Nhóm 10 thực hiện. Điểm số và lộ trình trên trang chỉ mang tính tham khảo.</small>
   </div>
 </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
-</script>
 </body>
 </html>
