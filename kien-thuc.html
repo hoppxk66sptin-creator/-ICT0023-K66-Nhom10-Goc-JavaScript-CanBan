@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kiến thức | JS Căn Bản</title>
-<meta name="description" content="Bảy chủ đề JavaScript căn bản có ví dụ mã, bảng so sánh và bộ lọc.">
+<meta name="description" content="Ôn tập JavaScript căn bản cho sinh viên: kiến thức, trắc nghiệm, luyện gõ mã, tra thuật ngữ.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 <header>
   <nav class="navbar navbar-expand-md site-nav" aria-label="Điều hướng chính">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><span class="brand-mark">JS</span> Căn Bản</a>
+      <a class="navbar-brand" href="index.html"><img class="brand-logo" src="anhlogonhom10.png" alt="JS Căn Bản"><span class="brand-team">GÓC JAVASCRIPT CĂN BẢN</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-chinh" aria-controls="menu-chinh" aria-expanded="false" aria-label="Mở menu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,43 +27,21 @@
   </nav>
 </header>
 <main id="noi-dung-chinh">
-
-<div class="tieu-de-trang"><div class="container">
-  <h1>Kiến thức JavaScript căn bản</h1>
-  <p>Bảy chủ đề được biên soạn từ tài liệu môn học, mỗi chủ đề có ví dụ mã.</p>
-</div></div>
-
-<section class="khoi-tight" aria-labelledby="tieu-de-ds">
+<div class="tieu-de-trang py-4">
   <div class="container">
-    <h2 id="tieu-de-ds" class="mb-3">Danh sách chủ đề</h2>
-    <form class="row g-3 align-items-end mb-3" role="search" aria-label="Lọc chủ đề">
-      <div class="col-12 col-md-4">
-        <label class="form-label" for="tim-kien-thuc">Tìm chủ đề</label>
-        <input class="form-control" type="search" id="tim-kien-thuc" placeholder="Ví dụ: mảng, vòng lặp" autocomplete="off">
-      </div>
-      <div class="col-6 col-md-3">
-        <label class="form-label" for="loc-nhom">Nhóm</label>
-        <select class="form-select" id="loc-nhom">
-          <option value="tat-ca">Tất cả</option>
-          <option>Nền tảng</option>
-          <option>Luồng điều khiển</option>
-          <option>Dữ liệu &amp; giao diện</option>
-        </select>
-      </div>
-      <div class="col-6 col-md-3">
-        <label class="form-label" for="sap-xep">Sắp xếp</label>
-        <select class="form-select" id="sap-xep">
-          <option value="thu-tu">Theo thứ tự học</option>
-          <option value="ten">Theo tên A-Z</option>
-        </select>
-      </div>
-      <div class="col-12 col-md-2"><button type="button" class="btn btn-outline-secondary w-100" id="dat-lai-loc">Đặt lại bộ lọc</button></div>
-    </form>
-    <p class="dem-ket-qua" id="dem-kien-thuc" aria-live="polite"></p>
-    <div class="row g-4" id="ds-kien-thuc"></div>
+    <h1>Danh sách chủ đề kiến thức</h1>
+    <p>Chọn chủ đề để xem chi tiết nội dung và ví dụ minh họa.</p>
+  </div>
+</div>
+<section class="khoi">
+  <div class="container">
+    <!-- Khu vực hiển thị danh sách các thẻ kiến thức được render tự động từ JS -->
+    <div class="row g-4" id="danh-sach-kien-thuc">
+      <!-- Nội dung được render tự động qua JavaScript -->
+    </div>
   </div>
 </section>
-
+</main>
 <section class="khoi-tight" aria-labelledby="tieu-de-bang">
   <div class="container">
     <div class="row g-4">
@@ -108,7 +86,6 @@
     </div>
   </div>
 </section>
-
 <div class="modal fade" id="modalCode" tabindex="-1" aria-labelledby="modalCodeTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-scrollable">
     <div class="modal-content">
@@ -121,12 +98,11 @@
     </div>
   </div>
 </div>
-
 </main>
 <footer class="site-footer">
   <div class="container">
-    <p class="mb-2"><strong>JS Căn Bản</strong> - trang ôn tập JavaScript cho sinh viên năm nhất.</p>
-    <small>Đây là sản phẩm học tập, không có backend, không đăng nhập, không lưu dữ liệu. Mọi dữ liệu là dữ liệu mẫu và sẽ đặt lại khi tải lại trang. Nguồn tài nguyên xem trong <code>SOURCES.md</code>.</small>
+    <p class="mb-2"><strong>JS Căn Bản</strong> trang ôn tập JavaScript cho sinh viên năm nhất.</p>
+    <small>Đây là sản phẩm học tập, không có backend, không đăng nhập, không lưu dữ liệu. Mọi dữ liệu là dữ liệu mẫu và sẽ đặt lại khi tải lại trang.</small>
     <small class="mt-2">&copy; <span id="nam-hien-tai">2026</span> Nhóm 10 thực hiện. Điểm số và lộ trình trên trang chỉ mang tính tham khảo.</small>
   </div>
 </footer>
@@ -134,6 +110,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
-<script src="js/kien-thuc.js"></script>
 </body>
 </html>
