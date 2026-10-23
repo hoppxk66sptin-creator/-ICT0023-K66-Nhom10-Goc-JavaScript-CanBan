@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Công cụ | JS Căn Bản</title>
+<meta name="description" content="Trắc nghiệm, bài luyện gõ mã và tra cứu thuật ngữ JavaScript.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#noi-dung-chinh">Bỏ qua điều hướng</a>
+<header>
+  <nav class="navbar navbar-expand-md site-nav" aria-label="Điều hướng chính">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+      <img class="brand-logo" src="anhlogonhom10.png" alt="JS Căn Bản">
+      <span class="brand-team">GÓC JAVASCRIPT CĂN BẢN</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-chinh" aria-controls="menu-chinh" aria-expanded="false" aria-label="Mở menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu-chinh">
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li><li class="nav-item"><a class="nav-link" href="kien-thuc.html">Kiến thức</a></li><li class="nav-item"><a class="nav-link active" href="cong-cu.html" aria-current="page">Công cụ</a></li><li class="nav-item"><a class="nav-link" href="hoi-dap.html">Hỏi đáp</a></li><li class="nav-item"><a class="nav-link" href="lien-he.html">Liên hệ</a></li></ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="noi-dung-chinh">
+
+<div class="tieu-de-trang"><div class="container">
+  <h1>Công cụ tự ôn tập</h1>
+  <p>Ba công cụ chạy ngay trên trình duyệt. Bấm "Dùng thử" để xem nhanh, "Làm lại" để đặt lại.</p>
+</div></div>
+
+<section class="khoi-tight">
+  <div class="container">
+    <ul class="nav nav-tabs" id="tab-cong-cu" role="tablist">
+      <li class="nav-item" role="presentation"><button class="nav-link active" id="tab-quiz" data-bs-toggle="tab" data-bs-target="#pane-quiz" type="button" role="tab" aria-controls="pane-quiz" aria-selected="true">Trắc nghiệm</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" id="tab-luyen" data-bs-toggle="tab" data-bs-target="#pane-luyen" type="button" role="tab" aria-controls="pane-luyen" aria-selected="false">Luyện gõ mã</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" id="tab-tra" data-bs-toggle="tab" data-bs-target="#pane-tra" type="button" role="tab" aria-controls="pane-tra" aria-selected="false">Tra thuật ngữ</button></li>
+    </ul>
+    <div class="tab-content bang-cong-cu">
+
+      <div class="tab-pane fade show active" id="pane-quiz" role="tabpanel" aria-labelledby="tab-quiz" tabindex="0">
+        <h2>Bộ câu hỏi trắc nghiệm</h2>
+        <p>Chọn một đáp án cho mỗi câu rồi bấm "Chấm điểm". Bạn có thể đổi đáp án thoải mái trước khi chấm.</p>
+        <form id="quiz-form" aria-label="Bộ câu hỏi trắc nghiệm"></form>
+        <div id="quiz-thong-bao" aria-live="polite"></div>
+        <div class="d-flex flex-wrap gap-2">
+          <button type="button" class="btn btn-xanh" id="nut-cham-diem">Chấm điểm</button>
+          <button type="button" class="btn btn-outline-secondary" id="nut-lam-lai">Làm lại từ đầu</button>
+          <button type="button" class="btn btn-outline-dark" id="nut-quiz-thu">Dùng thử</button>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pane-luyen" role="tabpanel" aria-labelledby="tab-luyen" tabindex="0">
+        <h2>Bài luyện gõ mã</h2>
+        <p>Gõ một dòng lệnh theo đề. Khoảng trắng thừa và dấu nháy đơn/kép đều được chấp nhận. Nhấn Ctrl + Enter để kiểm tra nhanh.</p>
+        <div class="row g-3 mb-3">
+          <div class="col-6 col-md-3">
+            <label class="form-label" for="chon-bai">Chọn bài</label>
+            <select class="form-select" id="chon-bai"></select>
+          </div>
+        </div>
+        <p><strong>Đề bài:</strong> <span id="de-bai"></span></p>
+        <label class="form-label" for="code-input">Câu trả lời của bạn</label>
+        <textarea class="form-control mb-3" id="code-input" rows="3" spellcheck="false" autocomplete="off" placeholder="Gõ lệnh JavaScript tại đây"></textarea>
+        <div id="luyen-thong-bao" aria-live="polite"></div>
+        <div class="d-flex flex-wrap gap-2">
+          <button type="button" class="btn btn-xanh" id="nut-kiem-tra">Kiểm tra</button>
+          <button type="button" class="btn btn-outline-secondary" id="nut-xoa-code">Xóa code / Làm lại</button>
+          <button type="button" class="btn btn-outline-dark" id="nut-code-thu">Dùng thử đáp án mẫu</button>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="pane-tra" role="tabpanel" aria-labelledby="tab-tra" tabindex="0">
+        <h2>Tra cứu thuật ngữ</h2>
+        <p>Kết quả hiện ngay khi bạn gõ. Không phân biệt hoa thường, gõ không dấu vẫn tìm được.</p>
+        <div class="row g-3 align-items-end mb-2">
+          <div class="col-12 col-md-5">
+            <label class="form-label" for="search-input">Từ khóa</label>
+            <div class="input-group">
+              <input class="form-control" type="search" id="search-input" placeholder="Ví dụ: closure, ham" autocomplete="off">
+              <button type="button" class="btn btn-outline-secondary" id="nut-xoa-tim" aria-label="Xóa tìm kiếm">X</button>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <label class="form-label" for="loc-thuat-ngu-nhom">Nhóm</label>
+            <select class="form-select" id="loc-thuat-ngu-nhom"><option value="tat-ca">Tất cả</option></select>
+          </div>
+          <div class="col-6 col-md-3">
+            <label class="form-label" for="sap-xep-thuat-ngu">Sắp xếp</label>
+            <select class="form-select" id="sap-xep-thuat-ngu"><option value="az">A đến Z</option><option value="za">Z đến A</option></select>
+          </div>
+        </div>
+        <p class="dem-ket-qua" id="dem-thuat-ngu" aria-live="polite"></p>
+        <div class="row g-3" id="ket-qua-search"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p class="mb-2"><strong>JS Căn Bản</strong> - trang ôn tập JavaScript cho sinh viên năm nhất.</p>
+    <small>Đây là sản phẩm học tập, không có backend, không đăng nhập, không lưu dữ liệu. Mọi dữ liệu là dữ liệu mẫu và sẽ đặt lại khi tải lại trang. Nguồn tài nguyên xem trong <code>SOURCES.md</code>.</small>
+    <small class="mt-2">&copy; <span id="nam-hien-tai">2026</span> Nhóm thực hiện. Điểm số và lộ trình trên trang chỉ mang tính tham khảo.</small>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cong-cu.js"></script>
+</body>
+</html>
