@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trang chủ | JS Căn Bản</title>
+<title>Kiến thức | JS Căn Bản</title>
 <meta name="description" content="Ôn tập JavaScript căn bản cho sinh viên: kiến thức, trắc nghiệm, luyện gõ mã, tra thuật ngữ.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,122 +22,39 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu-chinh">
-        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Trang chủ</a></li><li class="nav-item"><a class="nav-link" href="kien-thuc.html">Kiến thức</a></li><li class="nav-item"><a class="nav-link" href="cong-cu.html">Công cụ</a></li><li class="nav-item"><a class="nav-link" href="hoi-dap.html">Hỏi đáp</a></li><li class="nav-item"><a class="nav-link" href="lien-he.html">Liên hệ</a></li></ul>
+        <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li><li class="nav-item"><a class="nav-link active" href="kien-thuc.html" aria-current="page">Kiến thức</a></li><li class="nav-item"><a class="nav-link" href="cong-cu.html">Công cụ</a></li><li class="nav-item"><a class="nav-link" href="hoi-dap.html">Hỏi đáp</a></li><li class="nav-item"><a class="nav-link" href="lien-he.html">Liên hệ</a></li></ul>
       </div>
     </div>
   </nav>
 </header>
 <main id="noi-dung-chinh">
 
-<section class="hero" aria-labelledby="tieu-de-hero">
+<div class="tieu-de-trang py-4">
   <div class="container">
-    <div class="row align-items-center g-4">
-      <div class="col-lg-6">
-        <h1 id="tieu-de-hero">Hiểu JavaScript bằng cách tự gõ thử</h1>
-        <p class="lead mt-3">Bảy chủ đề nền tảng, một bộ trắc nghiệm, bài luyện gõ mã có gợi ý lỗi và bảng tra cứu thuật ngữ. Mọi thứ chạy ngay trên trình duyệt của bạn.</p>
-        <div class="d-flex flex-wrap gap-2 mt-4">
-          <a class="btn btn-chinh btn-lg" href="cong-cu.html">Vào làm bài ngay</a>
-          <a class="btn btn-outline-light btn-lg" href="kien-thuc.html">Đọc kiến thức</a>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="cua-so-code" aria-hidden="true">
-          <div class="thanh"><span></span><span></span><span></span></div>
-<pre><span class="tk-cm">// Bạn sẽ gõ được đoạn này sau bài đầu tiên</span>
-<span class="tk-kw">const</span> PI = <span class="tk-str">3.14</span>;
-<span class="tk-kw">let</span> tuoi = <span class="tk-str">20</span>;
-<span class="tk-kw">const</span> cacSo = [<span class="tk-str">1</span>, <span class="tk-str">2</span>, <span class="tk-str">3</span>, <span class="tk-str">4</span>];
-<span class="tk-kw">const</span> soNhanDoi = cacSo.map((num) =&gt; num * <span class="tk-str">2</span>);
-console.log(soNhanDoi); <span class="tk-cm">// [2, 4, 6, 8]</span></pre>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="khoi" aria-labelledby="tieu-de-tinh-nang">
-  <div class="container">
-    <h2 id="tieu-de-tinh-nang" class="mb-2">Dành cho ai, làm được gì</h2>
-    <p class="mb-4">Dành cho sinh viên năm nhất mới học lập trình web và cần ôn lại JavaScript trước kỳ kiểm tra.</p>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <article class="card the"><div class="card-body">
-          <h3>Đọc ngắn, có ví dụ</h3>
-          <p>Mỗi chủ đề gồm ba ý chính và một đoạn mã mẫu. Có thể lọc theo nhóm hoặc tìm theo từ khóa.</p>
-          <a href="kien-thuc.html" class="btn btn-xanh">Xem kiến thức</a>
-        </div></article>
-      </div>
-      <div class="col-md-4">
-        <article class="card the"><div class="card-body">
-          <h3>Tự kiểm tra ngay</h3>
-          <p>Trắc nghiệm 6 câu, bài luyện gõ mã được chấm tự động, báo lỗi cụ thể thay vì chỉ báo sai.</p>
-          <a href="cong-cu.html" class="btn btn-xanh">Mở công cụ</a>
-        </div></article>
-      </div>
-      <div class="col-md-4">
-        <article class="card the"><div class="card-body">
-          <h3>Tra thuật ngữ nhanh</h3>
-          <p>Gõ "closure" hoặc "ham" (không dấu cũng được) để ra định nghĩa ngắn gọn.</p>
-          <a href="cong-cu.html" class="btn btn-xanh">Tra cứu</a>
-        </div></article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="khoi-tight" aria-labelledby="tieu-de-lo-trinh">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <h2 id="tieu-de-lo-trinh">Thứ tự học gợi ý</h2>
-        <p>Học theo thứ tự này vì chủ đề sau dùng kiến thức của chủ đề trước.</p>
-        <ol class="lo-trinh">
-          <li>Biến: var, let, const</li>
-          <li>Kiểu dữ liệu và NaN</li>
-          <li>Điều kiện: if và switch</li>
-          <li>Vòng lặp: for, while</li>
-          <li>Hàm và hàm mũi tên</li>
-          <li>Mảng: push, map, filter</li>
-          <li>DOM: chọn và sửa phần tử</li>
-        </ol>
-      </div>
-      <div class="col-lg-6">
-        <h2>Lưu ý khi dùng trang</h2>
-        <div class="alert alert-info" role="alert">Toàn bộ dữ liệu là <strong>dữ liệu mẫu</strong>. Trang không lưu gì: tải lại là mọi lựa chọn được đặt về ban đầu.</div>
-        <div class="alert alert-warning" role="alert">Đừng nhập thông tin cá nhân thật vào biểu mẫu. Hãy dùng biệt danh và email mẫu như <code>ten@example.com</code>.</div>
-        <button type="button" class="btn btn-xanh" data-bs-toggle="modal" data-bs-target="#modalHuongDan">Cách dùng nhanh trong 30 giây</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="modal fade" id="modalHuongDan" tabindex="-1" aria-labelledby="modalHuongDanTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title fs-5" id="modalHuongDanTitle">Cách dùng nhanh</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
-      </div>
-      <div class="modal-body">
-        <ol>
-          <li>Vào trang <strong>Kiến thức</strong>, mở "Xem ví dụ mã" ở chủ đề bạn đang học.</li>
-          <li>Sang trang <strong>Công cụ</strong>, bấm "Dùng thử" để xem mỗi công cụ hoạt động.</li>
-          <li>Bấm "Làm lại" hoặc "Xóa" bất cứ lúc nào để đặt lại.</li>
-        </ol>
-      </div>
-      <div class="modal-footer"><button type="button" class="btn btn-xanh" data-bs-dismiss="modal">Đã hiểu</button></div>
-    </div>
+    <h1>Danh sách chủ đề kiến thức</h1>
+    <p>Chọn chủ đề để xem chi tiết nội dung và ví dụ minh họa.</p>
   </div>
 </div>
 
+<section class="khoi">
+  <div class="container">
+    <!-- Khu vực hiển thị danh sách các thẻ kiến thức được render tự động từ JS -->
+    <div class="row g-4" id="danh-sach-kien-thuc">
+      <!-- Nội dung được render tự động qua JavaScript -->
+    </div>
+  </div>
+</section>
+
 </main>
+
 <footer class="site-footer">
   <div class="container">
-    <p class="mb-2"><strong>JS Căn Bản</strong> - trang ôn tập JavaScript cho sinh viên năm nhất.</p>
-    <small>Đây là sản phẩm học tập, không có backend, không đăng nhập, không lưu dữ liệu. Mọi dữ liệu là dữ liệu mẫu và sẽ đặt lại khi tải lại trang. Nguồn tài nguyên xem trong <code>SOURCES.md</code>.</small>
+    <p class="mb-2"><strong>JS Căn Bản</strong> trang ôn tập JavaScript cho sinh viên năm nhất.</p>
+    <small>Đây là sản phẩm học tập, không có backend, không đăng nhập, không lưu dữ liệu. Mọi dữ liệu là dữ liệu mẫu và sẽ đặt lại khi tải lại trang.</small>
     <small class="mt-2">&copy; <span id="nam-hien-tai">2026</span> Nhóm 10 thực hiện. Điểm số và lộ trình trên trang chỉ mang tính tham khảo.</small>
   </div>
 </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <script src="js/data.js"></script>
